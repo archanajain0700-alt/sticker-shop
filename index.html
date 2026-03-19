@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticker Shop - Fun Stickers Collection</title>
     <style>
+        .sticker-card {
+  transition: 0.3s;
+}
+
+.sticker-card:hover {
+  transform: translateY(-10px);
+}
         * {
             margin: 0;
             padding: 0;
@@ -118,6 +125,7 @@
         .buy-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(238, 90, 36, 0.6);
+            <button onclick="alert('Added to cart!')">Buy Now</button>
         }
 
         .search-bar {
@@ -224,6 +232,7 @@
             { name: "Taco Tuesday", emoji: "🌮", category: "food", desc: "Every day is taco day!", price: 1.39 },
             { name: "Cool Sunglasses", emoji: "😎", category: "emotions", desc: "Too cool for school!", price: 0.89 },
             { name: "Hot Air Balloon", emoji: "🎈", category: "objects", desc: "Adventure awaits!", price: 1.49 }
+            
         ];
 
         const stickerGrid = document.getElementById('stickerGrid');
